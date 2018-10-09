@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="greeter.GreeterSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-09T11:11:27" hostname="GDSpb1324.lupus.griddynamics.net" time="0.084">
+<testsuite name="greeter.GreeterSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-09T12:18:26" hostname="GDSpb1324.lupus.griddynamics.net" time="0.098">
   <properties/>
-  <testcase name="Calling the entry point" classname="greeter.GreeterSpec" time="0.084"/>
+  <testcase name="Calling the entry point" classname="greeter.GreeterSpec" time="0.098"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

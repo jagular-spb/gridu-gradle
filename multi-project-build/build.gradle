@@ -17,6 +17,8 @@ subprojects {
     version = '1.0'
 }
 
+
+
 configure(subprojects.findAll { it.name == 'greeter' || it.name == 'greet-lib' }) { 
 
     apply plugin: 'groovy'

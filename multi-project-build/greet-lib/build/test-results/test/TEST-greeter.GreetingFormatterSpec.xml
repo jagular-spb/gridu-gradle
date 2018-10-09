@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="greeter.GreetingFormatterSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-09T10:59:03" hostname="GDSpb1324.lupus.griddynamics.net" time="0.044">
+<testsuite name="greeter.GreetingFormatterSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-09T12:18:25" hostname="GDSpb1324.lupus.griddynamics.net" time="0.044">
   <properties/>
   <testcase name="Creating a greeting" classname="greeter.GreetingFormatterSpec" time="0.044"/>
   <system-out><![CDATA[]]></system-out>

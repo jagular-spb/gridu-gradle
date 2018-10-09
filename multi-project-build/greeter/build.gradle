@@ -2,15 +2,20 @@ plugins {
     id 'java'        
     id 'application' 
 }
+
 mainClassName = 'greeter.Greeter'
 
 
+dependencies {
+    compile project(':greet-lib') 
+}
 
 distZip {
     from project(':docs').asciidoctor, { 
         into "${project.name}-${version}"
     }
 }
+
 distTar {
     from project(':docs').asciidoctor, {
         into "${project.name}-${version}"
