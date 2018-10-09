@@ -8,3 +8,4 @@
  */
 
 rootProject.name = 'multi-project-build'
+include 'greet-lib'
