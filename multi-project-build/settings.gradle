@@ -10,3 +10,4 @@
 rootProject.name = 'multi-project-build'
 include 'greet-lib'
 include 'greeter'
+include 'docs'
