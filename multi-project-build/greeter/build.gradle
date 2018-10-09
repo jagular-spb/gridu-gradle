@@ -1,17 +1,18 @@
 plugins {
     id 'java'        
     id 'application' 
-    id 'groovy' 
 }
 mainClassName = 'greeter.Greeter'
 
-dependencies {
-    compile project(':greet-lib') 
-    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4', {
-        exclude module: 'groovy-all'
+
+
+distZip {
+    from project(':docs').asciidoctor, { 
+        into "${project.name}-${version}"
     }
-    
 }
-
-
-
+distTar {
+    from project(':docs').asciidoctor, {
+        into "${project.name}-${version}"
+    }
+}
