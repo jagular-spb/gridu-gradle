@@ -1,0 +1,6 @@
+rootProject.name = 'main-app'
+include ':ef-app1'
+include ':ef-app2'
+
+project(':ef-app1').projectDir = "$rootDir/ef-app1" as File
+project(':ef-app2').projectDir = "$rootDir/ef-app2" as File

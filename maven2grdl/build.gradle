@@ -1,0 +1,29 @@
+allprojects  {
+  apply plugin: 'maven'
+
+  group = 'com.gridu.app'
+version = '1.307.1'
+}
+
+subprojects {
+  apply plugin: 'java'
+  sourceCompatibility = 1.5
+  targetCompatibility = 1.5
+  tasks.withType(JavaCompile) {
+  	options.encoding = 'UTF-8'
+  }
+
+  
+  repositories {
+    mavenLocal()
+    
+    maven { url "http://repo.maven.apache.org/maven2" }
+  }
+
+  
+  dependencies {
+    testCompile group: 'junit', name: 'junit', version:'4.11'
+}
+
+  
+}
