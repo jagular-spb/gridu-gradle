@@ -20,3 +20,10 @@ task hello(type: Greeting) {
     message 'Hello' 
     recipient 'World'
 }
+
+task gutenTag(type: Greeting) {
+    group 'Welcome'
+    description 'Produces a German greeting'
+    message 'Guten Tag'
+    recipient 'Welt'
+}
