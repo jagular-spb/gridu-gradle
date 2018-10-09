@@ -4,12 +4,19 @@
  * This is a general purpose Gradle build.
  * Learn how to create Gradle builds at https://guides.gradle.org/creating-new-gradle-builds/
  */
-task hello { 
+class Greeting extends DefaultTask {  
+    String message 
+    String recipient
 
-    group 'Welcome'
-    description 'Produces a greeting'
-
-    doLast { 
-        println 'Hello, World!'
+    @TaskAction 
+    void sayGreeting() {
+        println "${message}, ${recipient}!" 
     }
+}
+
+task hello(type: Greeting) { 
+    group 'Welcome'
+    description 'Produces a world greeting'
+    message 'Hello' 
+    recipient 'World'
 }
